@@ -53,7 +53,7 @@ header span {
     /* logo + text side-by-side */
     align-items: center;
     gap: 0.5rem;
-    border-bottom: solid var(--primary-color) 2px;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 header h1 {
@@ -83,8 +83,13 @@ main h2 {
 
 section {
     background-color: white;
-    border: solid var(--primary-color) 2px;
+    border: 2px solid var(--primary-color);
     margin: 1rem 0 0.5rem 0;
+}
+
+section img {
+    box-shadow: #333;
+    box-shadow: 0 4px 8px var(--primary-color);
 }
 
 section>h2+* {
@@ -156,12 +161,13 @@ a:hover i.fa-meteor {
     text-align: center;
     text-decoration: none;
     color: var(--secondary-color);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .navigation a:hover {
-    background-color: #bbb;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
+    box-shadow: inset 0 0 0 5px var(--primary-color);
 }
 
 .navigation.open a {
@@ -205,6 +211,7 @@ a:hover i.fa-meteor {
     color: var(--primary-color);
     border-radius: 3em;
     font-weight: 200;
+    letter-spacing: -0.5px;
 }
 
 #courses button,
@@ -217,7 +224,7 @@ a:hover i.fa-meteor {
 #courses li.completed {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border: solid var(--primary-color) 2px;
+    border: 2px solid var(--primary-color);
 
     opacity: 0.8;
     /* font-weight: lighter; */

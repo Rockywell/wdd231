@@ -18,6 +18,7 @@
 
     .navigation {
         flex-direction: row;
+        border-top: 1px solid var(--secondary-color);
     }
 
     .navigation a {
