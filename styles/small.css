@@ -176,9 +176,14 @@ a:hover i.fa-meteor {
 }
 
 .filters button {
+    transition: 0.2s;
     margin: 0.5rem;
     border-radius: 1rem;
     font-weight: bold;
+}
+
+.filters button:hover {
+    transform: scale(1.1);
 }
 
 .courses-list {
