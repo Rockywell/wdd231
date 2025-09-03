@@ -88,7 +88,6 @@ section {
 }
 
 section img {
-    box-shadow: #333;
     box-shadow: 0 4px 8px var(--primary-color);
 }
 
