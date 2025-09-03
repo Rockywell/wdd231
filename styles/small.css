@@ -225,7 +225,7 @@ a:hover i.fa-meteor {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 
-    opacity: 0.8;
+    opacity: 0.85;
     /* font-weight: lighter; */
 }
 
