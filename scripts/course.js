@@ -1,3 +1,13 @@
+const coursesBlock = document.querySelector("#courses");
+
+const courseFiltersElement = document.createElement("div");
+courseFiltersElement.className = "filters";
+
+const totalCreditsElement = document.createElement("span");
+
+const coursesList = document.createElement("ul");
+coursesList.className = "courses-list";
+
 const courses = [
     {
         subject: 'CSE',
@@ -9,7 +19,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +32,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +44,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +56,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +70,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -76,4 +86,44 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+let courseFilters = {
+    "All": () => true,
+    "WDD": course => course.subject == "WDD",
+    "CSE": course => course.subject == "CSE"
+};
+
+
+Object.keys(courseFilters).forEach(courseName => {
+
+    const button = document.createElement("button");
+    button.textContent = `${courseName} Courses`;
+
+    // button.dataset.value = courseFilters[courseName];
+    // coursesBlock.dataset.source = value;
+
+    let filteredCourses = courses.filter(courseFilters[courseName]);
+
+    button.addEventListener("click", () => {
+        createCourseCards(filteredCourses);
+    });
+
+    courseFiltersElement.appendChild(button)
+});
+
+coursesBlock.append(courseFiltersElement, totalCreditsElement, coursesList);
+
+
+
+function createCourseCards(courses) {
+    let totalCredits = courses.reduce((sum, { credits }) => sum + credits, 0);
+
+    totalCreditsElement.innerHTML = `The total credits for courses listed below is <strong>${totalCredits}</strong>`;
+
+    coursesList.innerHTML = courses.map(course => `
+        <li class="${course.completed ? "completed" : ""}">${course.subject} ${course.number}</li>
+    `).join('');
+}
+
+createCourseCards(courses)
