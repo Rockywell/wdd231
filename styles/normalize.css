@@ -1,0 +1,108 @@
+/* OPTIONAL */
+
+/* ==========================================================================
+   Normalize.css (Modernized 2025 Edition)
+   Based on work by Nicolas Gallagher & Jonathan Neal
+   https://necolas.github.io/normalize.css/
+   ========================================================================== */
+
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 3. Set a sensible default line-height & font smoothing */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* 4. Make media easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 5. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 6. Remove built-in form styles (consistent look across browsers) */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    border-radius: 0;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+/* 7. Improve button usability */
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+/* 8. Remove list styles */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+    padding: 0;
+}
+
+/* 9. Provide consistent text selection color */
+::selection {
+    background: #b3d4fc;
+    color: #000;
+}
+
+/* 10. Prevent text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 11. Root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
