@@ -137,7 +137,7 @@ nav a[aria-current="page"] {
 }
 
 #menu.open {
-    top: 4.5rem;
+    top: 5.8rem;
     color: var(--secondary-color);
 }
 
