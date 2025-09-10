@@ -1,4 +1,6 @@
 const url = 'data/members.json';
+
+const frag = document.createDocumentFragment();
 const cards = document.querySelector('.cards');
 
 const layoutWrapper = document.createElement("div");
@@ -55,12 +57,14 @@ const displayMembers = (members) => {
 
         card.classList.add(membershipStatuses[member.membershipLevel - 1]);
 
-        cards.appendChild(card);
+        frag.appendChild(card);
 
 
 
         // cards.innerHTML = courses.map(course => `<li class="${course.completed ? "completed" : ""}">${course.subject} ${course.number}</li>`).join('');
     });
+
+    cards.appendChild(frag);
 }
 
 getMembersData();
