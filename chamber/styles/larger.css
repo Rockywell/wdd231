@@ -1,0 +1,47 @@
+@media (min-width: 800px) {
+
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+        border-top: 1px solid var(--secondary-color);
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #me,
+    #weather {
+        display: grid;
+        gap: 1rem;
+    }
+
+    #me {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #weather {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .cards.list section {
+        grid-template-columns: 2fr 1fr;
+    }
+
+}

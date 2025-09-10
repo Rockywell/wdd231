@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Space Dynamics Laboratory",
+            "address": "info@sdl.usu.edu",
+            "phone": "435-713-3400",
+            "URL": "http://www.sdl.usu.edu",
+            "icon": "https://www.sdl.usu.edu/favicon.ico",
+            "membershipLevel": 3
+        },
+        {
+            "name": "iWorQ Systems",
+            "address": "sales@iworq.com",
+            "phone": "435-755-5126",
+            "URL": "https://www.iworq.com",
+            "icon": "https://iworq.com/wp-content/uploads/2018/10/cropped-Q2-32x32.png",
+            "membershipLevel": 2
+        },
+        {
+            "name": "TextMyGov",
+            "address": "support@textmygov.com",
+            "phone": "435-787-7222",
+            "URL": "https://www.textmygov.com",
+            "icon": "https://textmygov.com/wp-content/uploads/2019/10/favicon-2.ico",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Tecuity",
+            "address": "sales@tecuity.com",
+            "phone": "888-832-8489",
+            "URL": "https://tecuity.com",
+            "icon": "https://tecuity.com/img/favicon-32x32.png",
+            "membershipLevel": 2
+        },
+        {
+            "name": "BRAG",
+            "address": "alyssac@brag.utah.gov",
+            "phone": "435-752-7242",
+            "URL": "https://brag.utah.gov",
+            "icon": "https://brag.utah.gov/wp-content/uploads/cropped-brag-favicon-32x32.png",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Gossner Foods",
+            "address": "info@gossner.com",
+            "phone": "435-713-6104",
+            "URL": "https://www.gossner.com",
+            "icon": "https://gossner.com/cdn/shop/files/GossnerFavicon_32x.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Utah State University",
+            "address": "registrar@usu.edu",
+            "phone": "435-797-1000",
+            "URL": "https://www.usu.edu",
+            "icon": "https://www.usu.edu/favicon.ico",
+            "membershipLevel": 3
+        }
+    ]
+}

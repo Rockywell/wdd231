@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Chamber of Commerce - Directory</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Porter Luke Frazier - Chamber of Commerce - Directory">
+    <meta name="author" content="Porter Frazier">
+
+    <meta property="og:title" content="Logan Chamber of Commerce - Directory">
+    <meta property="og:description" content="Chamber of Commerce is a project website for my WDD231 class.">
+    <meta property="og:image" content="https://rockywell.github.io/wdd231/images/logo.svg">
+    <meta property="og:url" content="https://rockywell.github.io/wdd231/">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.svg" width="100" height="100" alt="Chamber of Commerce Logo">
+            <span>Logan Chamber of Commerce</span>
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#" aria-current="page">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
+            <button id="menu" aria-label="Menu" name="Menu"></button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+
+        <div class="cards grid"></div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="https://github.com/Rockywell/wdd231" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/porter-frazier-45aa9226b" aria-label="LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://rockywell.github.io/wdd131/space" aria-label="Solar System Website"><i
+                    class="fa-solid fa-meteor"></i></a>
+        </nav>
+        <div class="grid">
+            <p><b>Logan Chamber of Commerce</b><br>Logan, UT 84323<br>info@logancc.org<br>(435) 752-2161</p>
+            <p>&copy; <span id="currentyear"></span> - Logan Chamber of Commerce<br>Porter Luke Frazier - WDD 231</p>
+            <p>Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
