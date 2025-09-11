@@ -47,18 +47,10 @@
 
     footer {
         font-size: 1.5rem;
-        font-weight: bold;
-        background: var(--primary-color);
-        color: var(--secondary-color);
-        width: 100%;
-        border-radius: 1em 1em 0 0;
-        text-align: center;
-        padding: 2rem;
     }
 
     footer a {
         font-size: 3em;
-        margin: 0 1em 0 1em
     }
 
 }

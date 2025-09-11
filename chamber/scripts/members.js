@@ -1,6 +1,5 @@
 const url = 'data/members.json';
 
-const frag = document.createDocumentFragment();
 const cards = document.querySelector('.cards');
 
 const layoutWrapper = document.createElement("div");
@@ -25,6 +24,7 @@ async function getMembersData() {
 }
 
 const displayMembers = (members) => {
+    const frag = document.createDocumentFragment();
     const membershipStatuses = ["bronze", "silver", "gold"];
 
     members.forEach((member) => {
