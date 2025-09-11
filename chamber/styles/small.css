@@ -366,7 +366,7 @@ nav a[aria-current="page"] {
 
 
 footer {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -377,6 +377,6 @@ footer {
 }
 
 footer a {
-    font-size: 3em;
+    font-size: 2em;
     margin: 0 1em 0 1em
 }
