@@ -1,3 +1,10 @@
+@media (min-width: 500px) {
+    .hero img {
+        aspect-ratio: 2 / 1;
+    }
+}
+
+
 @media (min-width: 800px) {
 
     h1 {
@@ -9,6 +16,10 @@
     h2 {
         font-size: 2rem;
         text-align: center;
+    }
+
+    header span {
+        letter-spacing: 0.5rem;
     }
 
     #menu {
@@ -27,7 +38,7 @@
     }
 
     #me,
-    #weather {
+    #news {
         display: grid;
         gap: 1rem;
     }
@@ -36,7 +47,7 @@
         grid-template-columns: 2fr 1fr;
     }
 
-    #weather {
+    #news {
         grid-template-columns: 2fr 1fr 1fr;
     }
 

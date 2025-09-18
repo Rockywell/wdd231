@@ -1,3 +1,4 @@
+// SETUP
 const url = 'data/members.json';
 
 const cards = document.querySelector('.cards');
@@ -14,18 +15,34 @@ listButton.textContent = "List";
 layoutWrapper.append(gridButton, listButton)
 cards.before(layoutWrapper);
 
-async function getMembersData() {
+
+gridButton.addEventListener("click", () => {
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
+});
+
+
+
+//IMPLEMENTATION
+export const getMembersData = async () => {
 
     const response = await fetch(url);
     const data = await response.json();
 
     // console.table(data.members);
-    displayMembers(data.members);
+    return data.members;
 }
 
-const displayMembers = (members) => {
+export default async function displayMembers(members) {
     const frag = document.createDocumentFragment();
     const membershipStatuses = ["bronze", "silver", "gold"];
+
+    members ??= await getMembersData();
 
     members.forEach((member) => {
 
@@ -67,15 +84,4 @@ const displayMembers = (members) => {
     cards.appendChild(frag);
 }
 
-getMembersData();
-
-
-gridButton.addEventListener("click", () => {
-    cards.classList.add("grid");
-    cards.classList.remove("list");
-});
-
-listButton.addEventListener("click", () => {
-    cards.classList.add("list");
-    cards.classList.remove("grid");
-});
+// getMembersData().then(displayMembers);
