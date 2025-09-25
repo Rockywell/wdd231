@@ -282,8 +282,7 @@ form ::placeholder {
     color: rgba(51, 51, 51, .55);
 }
 
-/* form legend>label:has(*:required:invalid) { */
-form legend:has(~ label :required:invalid)::after {
+form label:has(*:required:invalid) span::after {
     color: red;
     content: " *";
 }
