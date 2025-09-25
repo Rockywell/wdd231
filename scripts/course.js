@@ -8,6 +8,8 @@ const totalCreditsElement = document.createElement("span");
 const coursesList = document.createElement("ul");
 coursesList.className = "courses-list";
 
+const courseDetails = document.querySelector("#course-details");
+
 const courses = [
     {
         subject: 'CSE',
@@ -114,7 +116,35 @@ Object.keys(courseFilters).forEach(courseName => {
 
 coursesBlock.append(courseFiltersElement, totalCreditsElement, coursesList);
 
+coursesList.addEventListener("click", (e) => {
+    const courseItem = e.target.closest("li");
 
+    if (courseItem) {
+        let selectedCourse = courses.filter(({ number }) => number == +courseItem.textContent.match(/\d+$/)[0])[0];
+        displayCourseDetails(selectedCourse);
+    }
+})
+
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    <br>
+    <p>${course.description}</p>
+    `;
+    courseDetails.showModal();
+
+    let closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
 
 function createCourseCards(courses) {
     let totalCredits = courses.reduce((sum, { credits }) => sum + credits, 0);

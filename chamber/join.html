@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan Chamber of Commerce - Home</title>
+    <title>Logan Chamber of Commerce - Join</title>
     <meta name="description"
-        content="WDD 231 - Web Frontend Development I - Porter Luke Frazier - Chamber of Commerce - Home">
+        content="WDD 231 - Web Frontend Development I - Porter Luke Frazier - Chamber of Commerce - Join">
     <meta name="author" content="Porter Frazier">
 
-    <meta property="og:title" content="Logan Chamber of Commerce - Home">
+    <meta property="og:title" content="Logan Chamber of Commerce - Join">
     <meta property="og:description" content="Chamber of Commerce is a project website for my WDD231 class.">
     <!-- <meta property="og:image" content="https://rockywell.github.io/wdd231/images/student_profile.webp" /> REWORK THIS -->
     <meta property="og:url" content="https://rockywell.github.io/wdd231/">
@@ -39,6 +39,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -58,6 +59,95 @@
 
     <main>
         <h1>Join</h1>
+        <div class="grid">
+            <form action="thankyou.html" method="get" autocomplete="on">
+
+                <label>
+                    <legend>First Name</legend>
+                    <input type="text" name="first_name" title="Enter your given (first) name" autocomplete="given-name"
+                        required>
+                </label>
+
+
+                <label>
+                    <legend>Last Name</legend>
+                    <input type="text" name="last_name" title="Enter your family (last) name" autocomplete="family-name"
+                        required>
+                </label>
+                <!-- org title -->
+
+                <label>
+                    <legend>Email</legend>
+                    <input type="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="name@example.com" required>
+                </label>
+
+                <label>
+                    <legend>Mobile Phone</legend>
+                    <input type="tel" name="mobile_phone" title="Enter your mobile phone number" autocomplete="tel"
+                        inputmode="tel" required>
+                </label>
+
+                <label>
+                    <legend>Organization</legend>
+                    <input type="text" name="organization" title="Enter your business or organization name"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>
+                    <legend>Membership Level</legend>
+                    <select name="membership_level" title="Select a membership level">
+                        <option value="" selected disabled>Choose a level…</option>
+                        <option value="0">NP Membership — Nonprofit (no fee)</option>
+                        <option value="1">Bronze Membership</option>
+                        <option value="2">Silver Membership</option>
+                        <option value="3">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    <legend>Organizational Title</legend>
+                    <input type="text" name="organization_title"
+                        title="Use letters, spaces, or hyphens; at least 7 characters (e.g., Senior-Lead)"
+                        autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                </label>
+
+                <label>
+                    <legend>Organization Description</legend>
+                    <textarea name="organization_description" title="Brief description of your business/organization"
+                        rows="5"></textarea>
+                </label>
+
+                <!-- <label></label> -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Become A Member</button>
+            </form>
+            <section class="cards">
+                <h2>Membership Levels</h2>
+
+                <section class="curtain">
+                    <h3>Non-Profit Membership</h3>
+                    <button class="layouts" data-membership="non-profit">Learn More</button>
+                </section>
+
+                <section class="bronze curtain-1">
+                    <h3>Bronze Membership</h3>
+                    <button class="layouts bronze" data-membership="bronze">Learn More</button>
+                </section>
+
+                <section class="silver curtain-2">
+                    <h3>Silver Membership</h3>
+                    <button class="layouts silver" data-membership="silver">Learn More</button>
+                </section>
+
+                <section class="gold curtain-3">
+                    <h2>Gold Membership</h2>
+                    <button class="layouts gold" data-membership="gold">Learn More</button>
+                </section>
+            </section>
+            <dialog id="member-details"></dialog>
+        </div>
     </main>
 
     <footer>
