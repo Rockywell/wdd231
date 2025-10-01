@@ -1,0 +1,77 @@
+:root {
+    /* 1E1F20  141414 0A0A0A*/
+    --color-primary: rgb(135, 206, 250);
+    --color-secondary: white;
+    --color-tertiary: #222;
+    /* #FFF08C */
+    --color-accent: #FFFA90;
+
+    --head-font: 'Luckiest Guy', 'Arial Black', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--color-primary), #B0E0E6);
+    color: var(--color-secondary);
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--head-font);
+}
+
+h2,
+h3,
+h4 {
+    color: var(--color-tertiary);
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+h1,
+p,
+li,
+figcaption {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+section {
+    display: block;
+    /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)); */
+    background: linear-gradient(45deg, var(--color-primary), #B0E0E6);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+    padding: 2rem;
+    border: 0.2rem solid var(--color-accent);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+    /* border: 0.2em solid var(--color-accent) */
+}
