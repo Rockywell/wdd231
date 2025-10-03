@@ -1,3 +1,5 @@
+import getData from './json.mjs';
+
 /*
 lat	required	Latitude. If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API
 lon	required	Longitude. If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API
@@ -24,23 +26,10 @@ const humidity = document.querySelector("#humidity")
 
 
 
-// IMPLEMENTATION
-
 const weatherURL = "https://api.openweathermap.org/data/2.5/forecast?appid=04e9252116bd02e4ce0163563ed4d3cd&lat=41.73&lon=-111.83&units=imperial";
 
-export async function apiFetch(url) {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            return await response.json();
-        } else {
-            throw Error(await response.text());
-        }
-    }
-    catch (error) {
-        console.log(error);
-    }
-}
+//IMPLEMENTATION
+export const getWeatherData = async () => await getData(weatherURL);
 
 export function getThreeDayForecast(data) {
     // new Date(1758164400 * 1000).toLocaleDateString("en-US", { weekday: "long", timeZone: "America/Denver" });
@@ -68,7 +57,7 @@ export function getThreeDayForecast(data) {
 
 export async function displayCurrentWeather(data) {
 
-    data ??= await apiFetch(weatherURL);
+    data ??= await getWeatherData();
 
     const currentWeather = data.list[0];
     let desc = currentWeather.weather[0].description;
@@ -93,7 +82,7 @@ export async function displayCurrentWeather(data) {
 
 export async function displayWeatherForecast(data) {
 
-    data ??= await apiFetch(weatherURL);
+    data ??= await getWeatherData();
 
     const format = date => date.toLocaleDateString("en-US", { weekday: "long", timeZone: "America/Denver" });
 

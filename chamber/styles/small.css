@@ -82,6 +82,12 @@ button {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
 .curtain,
 .curtain-1,
 .curtain-2,
@@ -128,6 +134,7 @@ h3,
 h4,
 h5,
 h6 {
+    align-self: center;
     letter-spacing: 0.1em;
     font-family: var(--heading-font);
 }
@@ -190,6 +197,25 @@ section {
 section img {
     box-shadow: 0 4px 8px var(--primary-color);
 }
+
+figure {
+    padding: 1rem;
+    align-content: center;
+    justify-self: center;
+}
+
+figcaption {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    padding: 0.4rem;
+    border-radius: 3em;
+    margin: 0.3rem;
+
+    text-align: center;
+}
+
 
 button {
     padding: 1rem;
@@ -621,7 +647,66 @@ dialog button {
     font-weight: 300;
 }
 
+#places section {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "location"
+        "button";
+}
 
+#places h2 {
+    grid-area: name;
+}
+
+#places figure {
+    grid-area: image;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+#places img {
+    transition: transform 0.4s;
+    width: 300px;
+}
+
+#places address {
+    grid-area: location;
+    justify-self: center;
+    margin: 0.2rem;
+}
+
+#places p {
+    grid-area: description;
+}
+
+#places button {
+    grid-area: button;
+    display: block;
+    padding: 0.5rem;
+    height: 50px;
+    margin-top: 1rem;
+    justify-self: center;
+}
+
+.notification {
+    position: fixed;
+    left: unset;
+    bottom: 1rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+
+    max-width: 450px;
+    height: auto;
+    animation: fadeIn 0.4s ease-in 1s 1 backwards;
+}
+
+.notification p {
+    margin-top: 1em;
+}
 
 footer {
     font-size: 1rem;

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 38rem) {
+    #places section {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image location"
+            "image button";
+    }
+
+    #places figure {
+        margin-bottom: 0;
+        border-bottom: none;
+        border-right: 2px solid black;
+    }
+
+    #places img:hover {
+        transform: scale(1.1);
+    }
+}

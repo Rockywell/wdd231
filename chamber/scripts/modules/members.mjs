@@ -1,3 +1,5 @@
+import getData from './json.mjs';
+
 // SETUP
 const url = 'data/members.json';
 
@@ -29,14 +31,7 @@ listButton.addEventListener("click", () => {
 
 
 //IMPLEMENTATION
-export const getMembersData = async () => {
-
-    const response = await fetch(url);
-    const data = await response.json();
-
-    // console.table(data.members);
-    return data.members;
-}
+export const getMembersData = async () => await getData(url);
 
 export default async function displayMembers(members) {
     const frag = document.createDocumentFragment();

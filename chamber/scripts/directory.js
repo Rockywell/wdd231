@@ -1,3 +1,3 @@
-import displayMembers from './members.mjs';
+import displayMembers from './modules/members.mjs';
 
 displayMembers();

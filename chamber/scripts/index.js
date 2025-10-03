@@ -1,5 +1,5 @@
-import displayMembers, { getMembersData } from './members.mjs';
-import { displayCurrentWeather, displayWeatherForecast } from './weather.mjs';
+import displayMembers, { getMembersData } from './modules/members.mjs';
+import { displayCurrentWeather, displayWeatherForecast } from './modules/weather.mjs';
 
 
 function shuffle(array) {

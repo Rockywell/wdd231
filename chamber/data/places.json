@@ -1,0 +1,58 @@
+[
+    {
+        "name": "American West Heritage",
+        "address": "4025 S Hwy 89-91, Wellsville, UT 84339",
+        "cost": "$12 general admission on select nights (ages 2 & under free). Prices vary by date/event.",
+        "URL": "images/west-heritage-teepee.webp",
+        "description": "Seasonal corn maze and fall festivities (hay rides, games, food) on AWHC's 275-acre living-history farm."
+    },
+    {
+        "name": "Cache Valley Fun Park",
+        "address": "255 E 1770 N, North Logan, UT 84341",
+        "cost": "Varies by activity (bowling, skating, laser tag, arcades). See official pricing page.",
+        "URL": "images/fun-park.webp",
+        "description": "Large family entertainment center with bowling, roller skating, arcades, axe throwing and laser tag."
+    },
+    {
+        "name": "Logan Tabernacle",
+        "address": "50 N Main St, Logan, UT 84321",
+        "cost": "Free (summer tours and many concerts are free).",
+        "URL": "images/logan-tabernacle.webp",
+        "description": "1891 pioneer-era meetinghouse downtown with a pipe organ; hosts community concerts and events."
+    },
+    {
+        "name": "Dee Glen Smith Spectrum",
+        "address": "Utah State University, Logan, UT 84322",
+        "cost": "Varies by event (ticketed USU games and concerts).",
+        "URL": "images/dee-glen-smith-spectrum.webp",
+        "description": "Iconic home of Utah State Aggies basketball and large campus events."
+    },
+    {
+        "name": "Utah State University",
+        "address": "Old Main Hill, Logan, UT 84322",
+        "cost": "Free to visit campus grounds.",
+        "URL": "images/USU-old-main.webp",
+        "description": "Walk USU's historic quad anchored by Old Main; grab ice cream at Aggie Creamery and enjoy hilltop views."
+    },
+    {
+        "name": "Zootah at Willow Park",
+        "address": "419 W 700 S, Logan, UT 84321",
+        "cost": "Day passes: $9 (ages 12+), $6 (ages 2-11), infants free.",
+        "URL": "images/zootah.webp",
+        "description": "Seven-acre, tree-lined community zoo with native and exotic animals, kids' events, and seasonal programs."
+    },
+    {
+        "name": "Logan Canyon - Wind Caves",
+        "address": "Wind Caves Trailhead, US-89 (Logan Canyon), Logan, UT",
+        "cost": "Free; trailhead parking is free.",
+        "URL": "images/logan-canyon-wind-caves.webp",
+        "description": "A popular 3.5-mile round-trip hike to natural 'wind caves' with sweeping Cache Valley views."
+    },
+    {
+        "name": "Willow Park & Logan River",
+        "address": "Willow Park Sports Complex, 500 W 700 S, Logan, UT 84321",
+        "cost": "Free.",
+        "URL": "images/willow-park-river.webp",
+        "description": "Shady city park and nearby paths for picnics, playgrounds, bird-watching, and waterside strolling."
+    }
+]
